@@ -1,15 +1,15 @@
 <?php
 
 namespace app\controllers;
-use app\models\prakweb60200121129;
+use app\models\matakuliah129;
 use yii\data\ActiveDataProvider;
 
-class MahasiswaController extends \yii\web\Controller
+class MataKuliahController extends \yii\web\Controller
 {
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => prakweb60200121129::find()
+            'query' => matakuliah129::find()
         ]);
         return $this->render('index', [
             'dataProvider' => $dataProvider
